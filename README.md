@@ -18,7 +18,7 @@ In progress 🛠️
 
 ### 3.2 Links
 
-- Live Site URL: In progress 🛠️
+- Live Site URL: [GitHub Page - Interactive rating component](https://rachelpizane.github.io/FM06-interactive-rating-component/)
 
 ## 4. My process 🗺️
 
