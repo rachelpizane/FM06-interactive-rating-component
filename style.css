@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    padding: 1.25rem;
+    color: #959eac;
+    background-color: #141519;
+}
+
+
+.card {
+    padding: 1.75rem;
+    display: grid;
+    gap: 1.5rem;
+    border-radius: 1.75rem;
+    background-color: #1f2630;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-set-text {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-resume{
+    line-height: 1.5rem;
+}
+
+.card-set-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-circle {
+    padding: .75rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #262f38;
+}
+
+.card-btn {
+    color:  #959eac;
+    font-weight: bold;
+    font-size: .9rem;
+    transition: .2s;
+}
+
+.card-btn:hover {
+    background-color: #959eac;
+    color: #fff;
+    transition: .2s;
+}
+
+.card-main-btn {
+    border-radius: 1.5rem;
+    padding: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #fb7413;
+    color: #fff;
+}
+
+.card-main-btn:active {
+    background-color: #fff;
+    color: #fb7413;
+    
+}
+
+.card-main-btn, .card-btn {
+    cursor: pointer;
+    border: none;
+}
+
+
+footer {
+    text-align: center;
+    font-size: .8rem;
+}
+
+
