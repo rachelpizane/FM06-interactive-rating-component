@@ -1,104 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap");
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-   
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body {
-    font-family: "Overpass", sans-serif;
-    display: grid;
-    align-items: center;
-    grid-template-rows: 1fr auto;
-    height: 100vh;
-    padding: 1.25rem;
-    color: #959eac;
-    background-color: #141519;
+  font-family: "Overpass", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+  padding: 1.25rem;
+  color: #959eac;
+  background-color: #141519;
 }
 
-
 .card {
-    padding: 1.75rem;
-    display: grid;
-    gap: 1.5rem;
-    border-radius: 1.75rem;
-    background-color: #1f2630;
+  padding: 2.25rem 2rem;
+  display: grid;
+  gap: 1.25rem;
+  border-radius: 1.75rem;
+  background-color: #1f2630;
+  height: 300x;
+  max-width: 340px;
+  box-sizing: content-box
 }
 
 .card-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-set-text {
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .card-title {
-    color: #fff;
+  color: #fff;
 }
 
-.card-resume{
-    line-height: 1.5rem;
+.card-resume {
+  line-height: 1.5rem;
 }
 
 .card-set-btns {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blue-circle {
-    padding: .75rem;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: #262f38;
+  padding: 0.75rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #262f38;
 }
 
 .card-btn {
-    color:  #959eac;
-    font-weight: bold;
-    font-size: .9rem;
-    transition: .2s;
+  color: #959eac;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.2s;
 }
 
 .card-btn:hover {
-    background-color: #959eac;
-    color: #fff;
-    transition: .2s;
+  background-color: #959eac;
+  color: #fff;
+  transition: 0.2s;
 }
 
 .card-main-btn {
-    border-radius: 1.5rem;
-    padding: .9rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #fb7413;
-    color: #fff;
+  border-radius: 1.5rem;
+  padding: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #fb7413;
+  color: #fff;
 }
 
 .card-main-btn:active {
-    background-color: #fff;
-    color: #fb7413;
-    
+  background-color: #fff;
+  color: #fb7413;
 }
 
-.card-main-btn, .card-btn {
-    cursor: pointer;
-    border: none;
+.card-main-btn,
+.card-btn {
+  cursor: pointer;
+  border: none;
 }
-
 
 footer {
-    text-align: center;
-    font-size: .8rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
+#otherSide {
+  display: none;
+  justify-items: center;
+}
 
+.card-img img{
+    display: block;
+}
+
+.center{
+    text-align: center;
+}
+.card-result{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1.5rem;
+    padding: .5rem .75rem;
+    color: #fb7413;
+}

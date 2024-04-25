@@ -10,7 +10,7 @@
 
 <body>
     <main>
-        <div class="card">
+        <div id="main" class="card">
             <div class="card-icon blue-circle">
                 <img src="img/icon-star.svg" alt="">
             </div>
@@ -21,33 +21,51 @@
             </div>
 
             <div class="card-set-btns">
-                <button id="btn1" class="card-btn blue-circle">1</button>
-                <button id="btn2"class="card-btn blue-circle">2</button>
-                <button id="btn3"class="card-btn blue-circle">3</button>
-                <button id="btn4"class="card-btn blue-circle">4</button>
-                <button id="btn5"class="card-btn blue-circle">5</button>
+                <button id="btn1" onclick="addRating(1)" class="card-btn blue-circle">1</button>
+                <button id="btn2" onclick="addRating(2)"class="card-btn blue-circle">2</button>
+                <button id="btn3" onclick="addRating(3)"class="card-btn blue-circle">3</button>
+                <button id="btn4" onclick="addRating(4)"class="card-btn blue-circle">4</button>
+                <button id="btn5" onclick="addRating(5)"class="card-btn blue-circle">5</button>
             </div>
 
-            <button class="card-main-btn">Submit</button>
+            <button id="btnMain" class="card-main-btn">Submit</button>
         </div>
-        <!-- Rating state end -->
-        <!-- Thank you state start -->
-        <!-- You selected Add rating here out of 5 -->
-        <!-- Thank you!
-      We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch! -->
-        <!-- Thank you state end -->
+
+        <div id="otherSide" class="card">
+            <div class="card-img">
+                <img src="img/illustration-thank-you.svg" alt="">
+            </div>
+
+            <p class="card-result blue-circle">You selected <span id="rating"></span> out of 5</p>
+
+            <div class="card-set-text center">
+                <h1 class="card-title">Thank you!</h1>
+                <p class="card-resume">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </div>
+        </div>
     </main>
     <footer aria-label="footer">
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
         <p>Coded by <a href="https://github.com/rachelpizane" target="_blank">Rachel Pizane</a>.</p>
     </footer>
     <script>
-        function registerPoint(numPoint){
-            let btn = document.getElementById("btn" + numPoint).innerHTML
-            let teste = document.getElementsByClassName("card-main-btn").item(0)
-            teste.innerHTML = btn
+        function addRating(num){
+            let btn = document.getElementById("btn" + num).innerHTML;
+            var rating = document.getElementById("rating");
+            rating.innerHTML = btn
         }
+
+        
+        let btnMain = document.getElementById("btnMain");
+        btnMain.addEventListener("click", function(){
+            if(rating.innerHTML !== ""){
+                let main = document.getElementById("main");
+                let otherSide = document.getElementById("otherSide");
+                main.style.display = "none";
+                otherSide.style.display = "grid";
+            }
+        })
+
     </script>
 </body>
 
