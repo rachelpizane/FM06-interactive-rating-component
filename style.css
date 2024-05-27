@@ -4,7 +4,6 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 body {
@@ -13,7 +12,7 @@ body {
   align-items: center;
   justify-items: center;
   grid-template-rows: 1fr auto;
-  height: 100vh;
+  min-height: 100vh;
   padding: 1.25rem;
   color: #959eac;
   background-color: #141519;
@@ -25,9 +24,8 @@ body {
   gap: 1.25rem;
   border-radius: 1.75rem;
   background-color: #1f2630;
-  height: 300x;
-  max-width: 340px;
-  box-sizing: content-box;
+  min-height: 427px;
+  max-width: 350px;
   position: relative;
 }
 
@@ -56,6 +54,7 @@ body {
 
 .card-resume {
   line-height: 1.5rem;
+  font-size: .9rem;
 }
 
 .card-set-btns {
@@ -78,7 +77,7 @@ body {
   transition: 0.2s;
 }
 
-.card-btn:hover {
+.card-btn:hover, .card-btn-select  {
   background-color: #959eac;
   color: #fff;
   transition: 0.2s;
@@ -93,22 +92,19 @@ body {
   font-size: 1rem;
   background-color: #fb7413;
   color: #fff;
+  transition: 0.2s;
 }
 
 .card-main-btn:active{
   background-color: #fff;
   color: #fb7413;
+  transition: 0.2s;
 }
 
 .card-main-btn,
 .card-btn {
   cursor: pointer;
   border: none;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.8rem;
 }
 
 #second-card {
@@ -123,10 +119,27 @@ footer {
 .center{
     text-align: center;
 }
+
 .card-result{
     width: fit-content;
     height: fit-content;
     border-radius: 1.5rem;
     padding: .5rem .75rem;
     color: #fb7413;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  transition: .2s;
+}
+
+footer a:hover {
+  color: #fb7413;
+  transition: .2s;
 }
