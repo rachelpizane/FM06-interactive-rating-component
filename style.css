@@ -27,7 +27,15 @@ body {
   background-color: #1f2630;
   height: 300x;
   max-width: 340px;
-  box-sizing: content-box
+  box-sizing: content-box;
+  position: relative;
+}
+
+.card-arrow-left{
+  position: absolute;
+  left: .5rem;
+  top: -2.5rem;
+  cursor: pointer;
 }
 
 .card-icon {
@@ -87,7 +95,7 @@ body {
   color: #fff;
 }
 
-.card-main-btn:active {
+.card-main-btn:active{
   background-color: #fff;
   color: #fb7413;
 }
@@ -103,7 +111,7 @@ footer {
   font-size: 0.8rem;
 }
 
-#otherSide {
+#second-card {
   display: none;
   justify-items: center;
 }

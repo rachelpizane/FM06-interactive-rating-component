@@ -10,7 +10,7 @@
 
 <body>
     <main>
-        <div id="main" class="card">
+        <div id="first-card" class="card">
             <div class="card-icon blue-circle">
                 <img src="img/icon-star.svg" alt="">
             </div>
@@ -21,17 +21,18 @@
             </div>
 
             <div class="card-set-btns">
-                <button id="btn1" onclick="addRating(1)" class="card-btn blue-circle">1</button>
-                <button id="btn2" onclick="addRating(2)"class="card-btn blue-circle">2</button>
-                <button id="btn3" onclick="addRating(3)"class="card-btn blue-circle">3</button>
-                <button id="btn4" onclick="addRating(4)"class="card-btn blue-circle">4</button>
-                <button id="btn5" onclick="addRating(5)"class="card-btn blue-circle">5</button>
+                <button id="btn1" onclick="addRating(this)" class="card-btn blue-circle">1</button>
+                <button id="btn2" onclick="addRating(this)" class="card-btn blue-circle">2</button>
+                <button id="btn3" onclick="addRating(this)" class="card-btn blue-circle">3</button>
+                <button id="btn4" onclick="addRating(this)" class="card-btn blue-circle">4</button>
+                <button id="btn5" onclick="addRating(this)" class="card-btn blue-circle">5</button>
             </div>
 
             <button id="btnMain" class="card-main-btn">Submit</button>
         </div>
 
-        <div id="otherSide" class="card">
+        <div id="second-card" class="card">
+            <img id="arrowBack" class="card-arrow-left" src="img/arrow-left.svg" alt="">
             <div class="card-img">
                 <img src="img/illustration-thank-you.svg" alt="">
             </div>
@@ -48,25 +49,7 @@
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
         <p>Coded by <a href="https://github.com/rachelpizane" target="_blank">Rachel Pizane</a>.</p>
     </footer>
-    <script>
-        function addRating(num){
-            let btn = document.getElementById("btn" + num).innerHTML;
-            var rating = document.getElementById("rating");
-            rating.innerHTML = btn
-        }
-
-        
-        let btnMain = document.getElementById("btnMain");
-        btnMain.addEventListener("click", function(){
-            if(rating.innerHTML !== ""){
-                let main = document.getElementById("main");
-                let otherSide = document.getElementById("otherSide");
-                main.style.display = "none";
-                otherSide.style.display = "grid";
-            }
-        })
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
