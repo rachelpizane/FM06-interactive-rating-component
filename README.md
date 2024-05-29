@@ -7,13 +7,17 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## 2. Project status  🕜
 
-In progress 🛠️
+ Completed!
 
 ## 3. Overview 🌎
 
 ### 3.1. Screenshot
 
-In progress 🛠️
+![Desktop version](img/desktop-version.png)
+
+<p align="center">
+<img src="img/mobile-version.gif" alt="Mobile version"">
+</p>
 <br>
 
 ### 3.2 Links
@@ -24,10 +28,18 @@ In progress 🛠️
 
 ### 4.1. Built with
 
-In progress 🛠️
+- HTML5; 
+- CSS3;
+- Grid;
+- Flexbox;
+- Javascript
 <br>
 
 ### 4.2. What I learned
 
-In progress 🛠️
+By completing this project with HTML, CSS, and Javascript, I significantly improved my Javascript skills, particularly in functions, conditionals, and DOM manipulation. 
+
+In addition to the requested features, I implemented a button that allows users to return to the homepage, resetting any previously submitted evaluation. 
+
+Furthermore, I added a condition that displays an alert if the user tries to click "Submit" without selecting an evaluation, informing them of the need to choose one before submitting.
 <br>
